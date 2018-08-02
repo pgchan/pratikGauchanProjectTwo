@@ -1,0 +1,4 @@
+Fonts
+Catamaran (Google Fonts)
+Lato (Google Fonts)
+Font Awesome (https://fontawesome.com/)
