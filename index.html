@@ -8,77 +8,92 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-
+    <link rel="stylesheet" href="styles/styles.css">
+    
     <title>Photography Website</title>
 
 </head>
 <body>
     <header class="mainHeader">
         <div class="mainTitle">
-            <h3>photography</h3>
+            <h3 class="mainTitle_header">photography</h3>
         </div>
-        <nav class="mainNav">
-            <ul class="links">
-                <li>home</li>
-                <li>gallery</li>
-                <li>blog</li>
-                <li>bookings</li>
-                <li>about us</li>
+        <nav class="navigation">
+            <ul class="navigation__menu">
+                <li class="navigation__item">
+                    <a class="navigation__links" href="#">home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__links" href="#">gallery</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__links" href="#">blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__links" href="#">bookings</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__links" href="#">about us</a>
+                </li>
             </ul>
         </nav>
         <div class="mainWelcomeText">
-            <h1>welcome</h1>
-            <h5>to my photography website</h5>
-            <button><h5>start</h5></button>
+            <h1 class-"mainWelcomeText__header">welcome</h1>
+            <h5 class="mainWelcomeText__subHeader">to my photography website</h5>
+            <a href="#" class="mainWelcomeText__button"><h5>start</h5></a>
         </div>
     </header>
 
     <main>
-
         <section class="welcome">
             <header class="sectionHeader">
-                <h2>welcome to photography</h2>
+                <h2 class="sectionHeader__text">welcome to <span>photography</span></h2>
             </header>
-            <p>
+            <p class="section__content">
                 Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla neque eu est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.
             </p>
-            <button><h5>more</h5></button>
+            <a href="#" class"section__button"><h5>more</h5></a>
         </section>
 
         <section class="services">
             <header class="sectionHeader">
-                <h2>services</h2>
+                <h2 class="sectionHeader__text">services</h2>
             </header>
-            <div class="servicesInner">
-                <div>
-                    <i class="fas fa-camera"></i>
-                    <h3>portraits</h3>
-                    <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
+
+            <div class="sectionBody">
+                <div class="sectionBody__content">
+                    <i class="fas fa-camera sectionBody__icon"></i>
+                    <h3 class="sectionBody__header">portraits</h3>
+                    <p class="sectionBody__text">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
                 </div>
-                <div>
-                    <i class="fas fa-leaf"></i>
-                    <h3>scenery</h3>
-                    <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
+                <div class="sectionBody__content">
+                    <i class="fas fa-leaf sectionBody__content__icon"></i>
+                    <h3 class="sectionBody__header">scenery</h3>
+                    <p class="sectionBody__text">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
                 </div>
-                <div>
-                    <i class="fas fa-heart"></i>
-                    <h3>weddings</h3>
-                    <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
+                <div class="sectionBody__content">
+                    <i class="fas fa-heart sectionBody__icon"></i>
+                    <h3 class="sectionBody__header">weddings</h3>
+                    <p class="sectionBody__text">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
                 </div>
             </div>
         </section>
 
         <section class="testimonials">
             <header class="sectionHeader">
-                <h2>testimonials</h2>
+                <h2 class="sectionHeader__text">testimonials</h2>
             </header>
-            <figure>
-                <img src="styles/assets/image-2.jpeg" alt="Picture of a girl standing in a field.">
-            </figure>
-            <div class="testimonialsContent">
-                <h3>kate sampson</h3>
-                <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
-            </div>
+
+            <section class="sectionBody">
+                <figure class="sectionBody__image">
+                    <img src="styles/assets/image-2.jpeg" alt="Picture of a girl standing in a field.">
+                </figure>
+                <div class="testimonialsContent">
+                    <h3 class="testimonialsContent__header">kate sampson</h3>
+                    <p class="section__content">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
+                </div>
+            </section>
+
         </section>
 
         <section class="sampleShoot">
@@ -124,57 +139,70 @@
 
         <section class="happyClients">
             <header class="sectionHeader">
-                <h2>happy clients</h2>
+                <h2 class="sectionHeader__text">happy clients</h2>
             </header>
-            <figure><img src="styles/assets/image-7.jpeg" alt="Close up picture of a girl."></figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-            <p>mary jane</p>
+    
+            <section class="sectionBody">
+                <figure class="sectionBody__figure">
+                    <img src="styles/assets/image-7.jpeg" alt="Close up picture of a girl.">
+                </figure>
+                <p class="section__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p class="section_content">mary jane</p>
+            </section>
+      
         </section>
 
         <section class="latestNews">
             <header class="sectionHeader">
-                <h2>latest news</h2>
+                <h2 class="sectionHeader__text">latest news</h2>
             </header>
-            <section>
-                <div>
+
+            <section class="sectionBody">
+                <article>
                     <figure><img src="styles/assets/image-8.jpeg" alt="Picture of a coastal city."></figure>
-                    <h5>my trip to italy</h5>
-                    <div class="readMore">   
-                        <a href="#">
-                            <h5>read more</h5>
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
+                    <div>
+                        <h5>my trip to italy</h5>
+                        <div class="readMore">   
+                            <a href="#">
+                                <h5>read more</h5>
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div>
+                </article>
+                <article>
                     <figure><img src="styles/assets/image-9.jpeg" alt="Picture of two chairs in front of a house with blue doors and windows."></figure>
-                    <h5>greece photoshoot</h5>
-                    <div class="readMore">  
-                        <a href="#">
-                            <h5>read more</h5>
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
+                    <div>
+                        <h5>greece photoshoot</h5>
+                        <div class="readMore">  
+                            <a href="#">
+                                <h5>read more</h5>
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div>
+                </article>
+                <article>
                     <figure><img src="styles/assets/image-10.jpeg" alt="Picture of  the back of a girl walking through a narrow alley."></figure>
-                    <h5>traveling with your partner</h5>
-                    <div class="readMore">
-                        <a href="#">
-                            <h5>read more</h5>
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
+                    <div>
+                        <h5>traveling with your partner</h5>
+                        <div class="readMore">
+                            <a href="#">
+                                <h5>read more</h5>
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </article>
             </section>
         </section>
 
         <section class="askAQuestion">
             <header class="sectionHeader">
-                <h2>ask a question</h2>
+                <h2 class="sectionHeader__text">ask a question</h2>
             </header>
             <textarea name="questionBox" id="questionBox" placeholder ="your message" cols="30" rows="10"></textarea>
-            <button><h5>send</h5></button>
+            <button class="section__button"><h5>send</h5></button>
         </section>
         
         <section class="latestShoots">
@@ -201,26 +229,26 @@
                         <li>
                             <figure>
                                 <img src="styles/assets/image-11.jpeg" alt="Picture of a waterfall from above.">
+                                <h3>landing page</h3>
                             </figure>
-                            <h3>landing page</h3>
                         </li>
                         <li>
                             <figure>
                                 <img src="styles/assets/image-12.jpeg" alt="Picture of a fishing village on a cliff next to the sea.">
+                                <h3>landing page</h3>
                             </figure>
-                            <h3>landing page</h3>
                         </li>
                         <li>
                             <figure>
-                                <img src="styles/assets/image-13.jpeg" alt="Picture of a beach with two boats and dozsens of people sunbathing.">
+                                <img src="styles/assets/image-13.jpeg" alt="Picture of a beach with two boats and dozens of people sunbathing.">
+                                <h3>landing page</h3>
                             </figure>
-                            <h3>landing page</h3>
                         </li>
                         <li>
                             <figure>
                                 <img src="styles/assets/image-14.jpeg" alt="Picture of sea cliffs with a beach.">
+                                <h3>landing page</h3>
                             </figure>
-                            <h3>landing page</h3>
                         </li>
                     </ul>
                 </div>
@@ -230,55 +258,50 @@
     </main>
 
     <footer>
-        <section class="contactAboutInstagram">
-            <section class="contact">
-                <header class="navHeader">
-                    <h3>contact</h3>
-                </header>
-                <div class="contactContent">
+        <section class="footerInfo">
+            <section class="footerInfo__section">
+                <h3 class="footer__header">contact</h3>
+                <div class="footerInfo__content">
                     <p><i class="far fa-envelope"></i>info@delicate.com</p>
                     <p><i class="fas fa-phone"></i>123 456-7890</p>
                     <p><i class="fas fa-map-marker-alt"></i>Toronto, Ontario</p>
                 </div>
             </section>
-            <section class="aboutUs">
-                <header class="navHeader">
-                    <h3>about us</h3>
-                </header>
-                <p>We are creative and modern web studio. Newest technologies it’s about us. We keep up with time, your web site will contain all of the best and modern trends. We are making web since 2005. Huge experience - is a best helper.</p>
+
+            <section class="footerInfo_section">
+                <h3 class="footer__header">about us</h3>
+                <p class="footerInfo_content">We are creative and modern web studio. Newest technologies it’s about us. We keep up with time, your web site will contain all of the best and modern trends. We are making web since 2005. Huge experience - is a best helper.</p>
             </section>
-            <section class="instagram">
-                <header class="navHeader">
-                    <h3>instagram</h3>
-                </header>
-                <section class="instagramPhotos">
-                    <ul>
-                        <li>
-                            <figure><img src="styles/assets/image-15.jpeg" alt="Photo of a person on a paddleboard taken from above."></figure>
-                        </li>
-                        <li>
-                            <figure><img src="styles/assets/image-16.jpeg" alt="Photo of an orange house with striped doors, green windows and clothes hanging above them."></figure>
-                        </li>
-                        <li>
-                            <figure><img src="styles/assets/image-17.jpeg" alt="Photo of a village by the sea with a boat in the foreground."></figure>
-                        </li>
-                        <li>
-                            <figure><img src="styles/assets/image-18.jpeg" alt="Photo of a bicycle with red wheels."></figure>
-                        </li>
-                        <li>
-                            <figure><img src="styles/assets/image-19.jpeg" alt="Photo of a rocky beach."></figure>
-                        </li>
-                        <li>
-                            <figure><img src="styles/assets/image-20.jpeg" alt="Photo of a narrow curved alley with colorful houses and plants in front of their doors."></figure>
-                        </li>
-                        <li>
-                            <figure><img src="styles/assets/image-21.jpeg" alt="Photo of the back of an older model car in Europe"></figure>
-                        </li>
-                        <li>
-                            <figure><img src="styles/assets/image-22.jpeg" alt="Photo of colorful houses next to a canal taken from a boat."></figure>
-                        </li>
-                    </ul>
-                </section>
+            
+            <section class="footerInfo__section">
+                <h3 class="footer__header">instagram</h3>
+                <ul class="footerInfo__content">
+                    <li>
+                        <img src="styles/assets/image-15.jpeg" alt="Photo of a person on a paddleboard taken from above.">
+                    </li>
+                    <li>
+                        <img src="styles/assets/image-16.jpeg" alt="Photo of an orange house with striped doors, green windows and clothes hanging above them.">
+                    </li>
+                    <li>
+                        <img src="styles/assets/image-17.jpeg" alt="Photo of a village by the sea with a boat in the foreground.">
+                    </li>
+                    <li>
+                        <img src="styles/assets/image-18.jpeg" alt="Photo of a bicycle with red wheels.">
+                    </li>
+                    <li>
+                        <img src="styles/assets/image-19.jpeg" alt="Photo of a rocky beach.">
+                    </li>
+                    <li>
+                        <img src="styles/assets/image-20.jpeg" alt="Photo of a narrow curved alley with colorful houses and plants in front of their doors.">
+                    </li>
+                    <li>
+                        <img src="styles/assets/image-21.jpeg" alt="Photo of the back of an older model car in Europe">
+                    </li>
+                    <li>
+                        <img src="styles/assets/image-22.jpeg" alt="Photo of colorful houses next to a canal taken from a boat.">
+                    </li>
+                </ul>
+
             </section>
         </section>
 
@@ -290,21 +313,34 @@
             </ul>
         </section>
 
-        <nav class="footerNav">
-            <header class="navHeader">
-                <h3>photography</h3>
-            </header>
-            <div class="footerNavMenu">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">demos</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">pages</a></li>
-                    <li><a href="#">about us</a></li>
+        <section class="footer__navigation">
+            <h3 class="footer__header">photography</h3>
+
+            <nav class="navigation">
+                <ul class="navigation__menu">
+                    <li class="navigation__item">
+                        <a class="navigation__links" href="#">home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__links" href="#">demos</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__links" href="#">blog</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__links" href="#">pages</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__links" href="#">about us</a>
+                    </li>
                 </ul>
+            </nav>
+
+            <div class="copyright">
+                <h6 class="copyright__description">2017 all rights reserved &copy;</h6>
             </div>
-        </nav>
-        <div class="copyright">2017 all rights reserved &copy;</div>
+        </section>
+
     </footer>
 
 </body>
