@@ -19,13 +19,15 @@
     position: relative;
 }
 
-
 .sectionBody {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+
+    &__image {width: 100%;}
+    &__picture {display: block;}
 }
 
-
+img {display: block;}
 
 
 // main welcome page//
@@ -51,7 +53,6 @@
     &__item {padding-left: 20px;}
 }
 
-
 .mainWelcome {
     display: flex;
     justify-content: flex-end;
@@ -68,67 +69,102 @@
 /* --------- SECTION: WELCOME -----------*/
 
 .welcome {
-    padding: 123px;
+    padding: 123px 0 128px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    &__header { margin-bottom: 50px}
+    &__text {padding: 0 113px}
+    &__buttonText {
+        text-decoration: none;
+        margin-top: 50px;
+        border: 1px solid #2a2a2a;
+        padding: 20px 50px;
+    }
 }
 
 /* --------- SECTION: SERVICES -----------*/
 
 .services {
-    padding: 133px 0 122px 0;
+    padding: 115px 0 122px 0;
     background-color:  #bec884;
 
     &__sectionBody {justify-content: space-around}
     &__content {
         flex-basis: 30%;
-        padding: 0 60px;
-        text-align: center;
+        // padding: 0 60px;
+        text-align: center;   
     }
-}
-
-
-.sectionHeader {
-    margin-bottom: 75px;
-}
-
-.section__text {
-    margin-bottom: 80px;
+    &__header {margin-bottom: 60px;}
+    &__icon {margin-bottom: 12px;}
+    &__text {
+        line-height: 1.625;
+        padding: 0px 12%;
+    }
 }
 
 
 /* --------- SECTION: happy clients -----------*/
 
+.happyClientsSection { background-color:  #efefef;}
+
 .happyClients {
-    background-color:  #efefef;
+    padding: 100px 0 130px 0;
+
+    &__header {margin-bottom: 55px;}
 
     &__sectionBody {
     display: flex;
     flex-direction: column;
     }
+    &__photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__text { 
+        padding: 0 12%;
+        margin: 78px 0 75px 0;
+     }
 }
 
-.sectionBody {
-    &__figure {text-align: center}
-    &__text {line-height: 1.625}
-}
 
 
 /* --------- SECTION: testimonials content -----------*/
 
 
-.testimonialsContent__text {
-    font-size: 1.5rem;
+.testimonials {
+    padding: 120px 0;
+    &__header {margin-bottom: 50px;}
+
+    &__figure {flex: 1 0 6%;}
+
+    &__content {
+        flex: 1 0 15%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subHeader {
+        margin-top: 14vh;
+        margin-bottom: 34px;
+    }
+
+    &__text {line-height: 1.583}
+
 }
-
-
 
 
 /* --------- SECTION: sample shoot -----------*/
 
 .sampleShoot {
     display: flex;
+
+//     &__figure {flex: 1;}
+    &__picture {
+        width: 100%;
+        display: block;
+    }
 }
 
 .latestNews {
@@ -151,3 +187,51 @@
 //         text-align: center;
 //     }
 // }
+
+
+/* --------- SECTION: latest shoots -----------*/
+
+.latestShootsSection {background-color: #efefef;}
+
+.latestShoots {
+    display: flex;
+
+    &__nav {
+        background-color:  #606060;
+        flex: 1 0 25%;
+        margin-right: 2.5%;
+    }
+
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 2 0 52%;
+        justify-content: space-between;
+    }
+}
+
+
+.latestShoots__photoContainer {
+    position: relative;
+}
+
+.latestShoots__pictureText {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    transform: translate(31%, -50%);
+    visibility: hidden;
+}
+
+.latestShoots__photoContainer:hover {
+    // position: relative;
+
+    opacity: 0.3;
+    // background: rgba(42, 42, 42, 0.7);
+    // visibility: visible;
+
+}
+
+.latestShoots__pictureText {
+    color: #fff;
+}

@@ -57,6 +57,7 @@ h6 {
     &__text {
     font-size: 1.5rem;
     text-align: center;
+    line-height: 1.583;
     }
 
     &__text--italic {
@@ -79,12 +80,16 @@ h6 {
 }
 
 
-.sectionBody__icon {
+.services__icon {
     font-size: 3.75rem;
 }
 
 
 // width: calc((100% / 3) - 20px);
 
+
+.testimonials__text {
+    font-size: 1.5rem;
+}
 
 
