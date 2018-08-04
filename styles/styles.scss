@@ -5,6 +5,149 @@
 @import "partials/_footer.scss";
 
 
-h1 {
-    font-size: 100px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
 }
+
+.wrapper {
+    max-width: 1141px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.sectionBody {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+// main welcome page//
+
+.mainHeader {
+    background-image: url("assets/image-1.jpeg");
+    // padding: 17vw 0;
+    height: 97vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.mainHeaderNav{
+    margin: 45px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    &__menu {display: flex;}
+    &__item {padding-left: 20px;}
+}
+
+
+.mainWelcome {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28vh;
+
+    &__button__text {
+        border: 1px solid #2a2a2a;
+    }
+}
+
+
+
+
+/* --------- SECTION: WELCOME -----------*/
+
+.welcome {
+    padding: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------- SECTION: SERVICES -----------*/
+
+.services {
+    padding: 133px 0 122px 0;
+    background-color:  #bec884;
+
+    &__sectionBody {justify-content: space-around}
+    &__content {
+        flex-basis: 30%;
+        padding: 0 60px;
+        text-align: center;
+    }
+}
+
+
+.sectionHeader {
+    margin-bottom: 75px;
+}
+
+.section__text {
+    margin-bottom: 80px;
+}
+
+
+/* --------- SECTION: happy clients -----------*/
+
+.happyClients {
+    background-color:  #efefef;
+
+    &__sectionBody {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+.sectionBody {
+    &__figure {text-align: center}
+    &__text {line-height: 1.625}
+}
+
+
+/* --------- SECTION: testimonials content -----------*/
+
+
+.testimonialsContent__text {
+    font-size: 1.5rem;
+}
+
+
+
+
+/* --------- SECTION: sample shoot -----------*/
+
+.sampleShoot {
+    display: flex;
+}
+
+.latestNews {
+    background-color:  #f5f3f3;
+    &__sectionBody {justify-content: space-between}
+    &__content {
+        flex-basis: 30%;
+    }
+}
+
+
+/* --------- SECTION: latest news -----------*/
+
+
+
+//     &__sectionBody {justify-content: space-around}
+//     &__content {
+//         flex-basis: 30%;
+//         padding: 0 60px;
+//         text-align: center;
+//     }
+// }
