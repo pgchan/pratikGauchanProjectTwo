@@ -175,7 +175,8 @@ h6 {
 .section__text--italic {
   font-style: italic;
   font-size: 1.5rem;
-  text-align: center; }
+  text-align: center;
+  text-transform: capitalize; }
 
 .section__button {
   text-align: center; }
@@ -190,6 +191,13 @@ h6 {
 
 .testimonials__text {
   font-size: 1.5rem; }
+
+.latestNews__readMore {
+  color: #285d64; }
+
+.latestNews__arrow {
+  color: #285d64;
+  font-size: 1.25rem; }
 
 * {
   margin: 0;
@@ -277,7 +285,8 @@ img {
     text-decoration: none;
     margin-top: 50px;
     border: 1px solid #2a2a2a;
-    padding: 20px 50px; }
+    padding: 10px 50px;
+    border-radius: 34px; }
 
 /* --------- SECTION: SERVICES -----------*/
 .services {
@@ -321,6 +330,12 @@ img {
     padding: 0 12%;
     margin: 78px 0 75px 0; }
 
+.section__text--italic::before {
+  content: "~"; }
+
+.section__text--italic::after {
+  content: "~"; }
+
 /* --------- SECTION: testimonials content -----------*/
 .testimonials {
   padding: 120px 0; }
@@ -357,19 +372,45 @@ img {
     display: block; }
 
 .latestNews {
-  background-color: #f5f3f3; }
+  background-color: #f5f3f3;
+  padding: 100px 0; }
   .latestNews__sectionBody {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-  .latestNews__content {
-    -ms-flex-preferred-size: 30%;
-    flex-basis: 30%; }
+  .latestNews__header {
+    margin-bottom: 60px; }
+  .latestNews__subHeader {
+    margin: 20px 0 5px 0; }
+  .latestNews__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 /* --------- SECTION: latest news -----------*/
+/* --------- SECTION: ask a question -----------*/
+.askAQuestionSection {
+  background-color: #f2b094; }
+
+.askAQuestion__sectionBody {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.askAQuestion__questionBox {
+  background-color: #f2b094; }
+
+.askAQuestion__button {
+  background-color: #f2b094; }
+
 /* --------- SECTION: latest shoots -----------*/
 .latestShootsSection {
-  background-color: #efefef; }
+  background-color: #efefef;
+  padding: 122px 0; }
 
 .latestShoots {
   display: -webkit-box;
@@ -380,7 +421,34 @@ img {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 25%;
     flex: 1 0 25%;
-    margin-right: 2.5%; }
+    margin-right: 2.5%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+  .latestShoots__text {
+    color: #fff; }
+  .latestShoots__menu {
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .latestShoots__textContainer:hover {
+    background-color: #2a2a2a; }
   .latestShoots__gallery {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -411,3 +479,41 @@ img {
 
 .latestShoots__pictureText {
   color: #fff; }
+
+/* --------- SECTION: footer -----------*/
+.footerWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 110px; }
+
+.footerInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .footerInfo__contact {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%; }
+  .footerInfo__aboutUs {
+    -ms-flex-preferred-size: 34%;
+    flex-basis: 34%; }
+  .footerInfo__instagram {
+    -ms-flex-preferred-size: 29%;
+    flex-basis: 29%; }
+    .footerInfo__instagram__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: wrap;
+      flex-flow: wrap;
+      -ms-flex-line-pack: stretch;
+      align-content: stretch; }
+    .footerInfo__instagram__pic {
+      margin: 4px; }

@@ -171,58 +171,64 @@
     
                 <article class="sectionBody latestNews__sectionBody">
     
-                    <article class="latestNews_content">
+                    <article class="latestNews__content">
                         <img src="styles/assets/image-8.jpeg" alt="Picture of a coastal city.">
-                        <h5>my trip to italy</h5>
-                        <a href="#">
-                            <h5 class="sectionBody__link">read more</h5>
-                            <i class="fas fa-angle-double-right"></i>
+                        <h5 class="latestNews__subHeader">my trip to italy</h5>
+                        <a href="#" class="latestNews__link">
+                            <h5 class="latestNews__readMore">read more</h5>
+                            <i class="fas fa-angle-double-right latestNews__arrow"></i>
                         </a>
                     </article>
-                    <article class="latestNews_content">
+                    <article class="latestNews__content">
                         <img src="styles/assets/image-9.jpeg" alt="Picture of two chairs in front of a house with blue doors and windows.">
-                        <h5>greece photoshoot</h5>
-                        <a href="#">
-                            <h5 class="sectionBody__link">read more</h5>
-                            <i class="fas fa-angle-double-right"></i>
+                        <h5 class="latestNews__subHeader">greece photoshoot</h5>
+                        <a href="#" class="latestNews__link">
+                            <h5 class="latestNews__readMore">read more</h5>
+                            <i class="fas fa-angle-double-right latestNews__arrow"></i>
                         </a>
                     </article>
-                    <article class="latestNews_content">
-                        <img src="styles/assets/image-8.jpeg" alt="Picture of a coastal city.">
-                        <h5>traveling with your partner</h5>
-                        <a href="#">
-                            <h5 class="sectionBody__link">read more</h5>
-                            <i class="fas fa-angle-double-right"></i>
+                    <article class="latestNews__content">
+                        <img src="styles/assets/image-10.jpeg" alt="Picture of a coastal city.">
+                        <h5 class="latestNews__subHeader">traveling with your partner</h5>
+                        <a href="#" class="latestNews__link">
+                            <h5 class="latestNews__readMore">read more</h5>
+                            <i class="fas fa-angle-double-right latestNews__arrow"></i>
                         </a>
                     </article>
                 </article>
             </section>
         </section>
 
-        <section class="askAQuestion wrapper">
-            <header class="sectionHeader askAQuestion__header">
-                <h2 class="sectionHeader__text">ask a question</h2>
-            </header>
-            <textarea name="questionBox" id="questionBox" placeholder ="your message" cols="30" rows="10"></textarea>
-            <button class="section__button"><h5>send</h5></button>
+        <section class="askAQuestionSection">
+            <section class="askAQuestion wrapper">
+                <header class="sectionHeader askAQuestion__header">
+                    <h2 class="sectionHeader__text">ask a question</h2>
+                </header>
+                <section class="sectionBody askAQuestion__sectionBody">
+                    <textarea name="questionBox" id="questionBox" placeholder ="your message" cols="30" rows="10" class="askAQuestion__questionBox"></textarea>
+                    <button class="section__button askAQuestion__button"><h5>send</h5></button>
+                </section>
+            </section>
         </section>
         
         <section class="latestShootsSection">
             <section class="latestShoots wrapper">
                 <div class="latestShoots__nav">
-                    <h3 class="latestShoots__text">latest shoots</h3>
-                    <ul>
-                        <li>
-                            <a href="#" class="latestShoots__text"><h3>all</h3></a>
+                    <div class="latestShoots__subHeader">
+                        <h3 class="latestShoots__text">latest shoots</h3>
+                    </div>
+                    <ul class="latestShoots__menu">
+                        <li class="latestShoots__textContainer">
+                            <a href="#"><h3 class="latestShoots__text">all</h3></a>
                         </li>
-                        <li>
-                            <a href="#" class="latestShoots__text"><h3>weddings</h3></a>
+                        <li class="latestShoots__textContainer">
+                            <a href="#"><h3 class="latestShoots__text">weddings</h3></a>
                         </li>
-                        <li>
-                            <a href="#" class="latestShoots__text"><h3>scenery</h3></a>
+                        <li class="latestShoots__textContainer">
+                            <a href="#"><h3 class="latestShoots__text">scenery</h3></a>
                         </li>
-                        <li>
-                            <a href="#" class="latestShoots__text"><h3>portraits</h3></a>
+                        <li class="latestShoots__textContainer">
+                            <a href="#"><h3 class="latestShoots__text">portraits</h3></a>
                         </li>
                     </ul>
                 </div>
@@ -252,51 +258,79 @@
     </main>
 
     <footer>
-        <section class="footerInfo wrapper">
-            <article class="footerInfo__section">
-                <h3 class="footer__header">contact</h3>
-                <div class="footerInfo__content">
-                    <p><i class="far fa-envelope"></i>info@delicate.com</p>
-                    <p><i class="fas fa-phone"></i>123 456-7890</p>
-                    <p><i class="fas fa-map-marker-alt"></i>Toronto, Ontario</p>
-                </div>
-            </article>
 
-            <article class="footerInfo_section">
-                <h3 class="footer__header">about us</h3>
-                <p class="footerInfo_content">We are creative and modern web studio. Newest technologies it’s about us. We keep up with time, your web site will contain all of the best and modern trends. We are making web since 2005. Huge experience - is a best helper.</p>
-            </article>
-            
-            <article class="footerInfo__section">
-                <h3 class="footer__header">instagram</h3>
-                <ul class="footerInfo__content">
-                    <li>
-                        <img src="styles/assets/image-15.jpeg" alt="Photo of a person on a paddleboard taken from above.">
-                    </li>
-                    <li>
-                        <img src="styles/assets/image-16.jpeg" alt="Photo of an orange house with striped doors, green windows and clothes hanging above them.">
-                    </li>
-                    <li>
-                        <img src="styles/assets/image-17.jpeg" alt="Photo of a village by the sea with a boat in the foreground.">
-                    </li>
-                    <li>
-                        <img src="styles/assets/image-18.jpeg" alt="Photo of a bicycle with red wheels.">
-                    </li>
-                    <li>
-                        <img src="styles/assets/image-19.jpeg" alt="Photo of a rocky beach.">
-                    </li>
-                    <li>
-                        <img src="styles/assets/image-20.jpeg" alt="Photo of a narrow curved alley with colorful houses and plants in front of their doors.">
-                    </li>
-                    <li>
-                        <img src="styles/assets/image-21.jpeg" alt="Photo of the back of an older model car in Europe">
-                    </li>
-                    <li>
-                        <img src="styles/assets/image-22.jpeg" alt="Photo of colorful houses next to a canal taken from a boat.">
-                    </li>
-                </ul>
-
-            </article>
+        <section class="footerWrapper wrapper">
+            <section class="footerInfo">
+                <article class="footerInfo__section footerInfo__contact">
+                    <h3 class="footer__header">contact</h3>
+                    <div class="footerInfo__content">
+                        <p><i class="far fa-envelope"></i>info@delicate.com</p>
+                        <p><i class="fas fa-phone"></i>123 456-7890</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Toronto, Ontario</p>
+                    </div>
+                </article>
+    
+                <article class="footerInfo__section footerInfo__aboutUs">
+                    <h3 class="footer__header">about us</h3>
+                    <p class="footerInfo_content">We are creative and modern web studio. Newest technologies it’s about us. We keep up with time, your web site will contain all of the best and modern trends. We are making web since 2005. Huge experience - is a best helper.</p>
+                </article>
+                
+                <article class="footerInfo__section footerInfo__instagram">
+                    <h3 class="footer__header">instagram</h3>
+                    <ul class="footerInfo__content footerInfo__instagram__content">
+                        <li class="footerInfo__instagram__pic">
+                            <img src="styles/assets/image-15.jpeg" alt="Photo of a person on a paddleboard taken from above.">
+                        </li>
+                        <li class="footerInfo__instagram__pic">
+                            <img src="styles/assets/image-16.jpeg" alt="Photo of an orange house with striped doors, green windows and clothes hanging above them.">
+                        </li>
+                        <li class="footerInfo__instagram__pic">
+                            <img src="styles/assets/image-17.jpeg" alt="Photo of a village by the sea with a boat in the foreground.">
+                        </li>
+                        <li class="footerInfo__instagram__pic">
+                            <img src="styles/assets/image-18.jpeg" alt="Photo of a bicycle with red wheels.">
+                        </li>
+                        <li class="footerInfo__instagram__pic">
+                            <img src="styles/assets/image-19.jpeg" alt="Photo of a rocky beach.">
+                        </li>
+                        <li class="footerInfo__instagram__pic">
+                            <img src="styles/assets/image-20.jpeg" alt="Photo of a narrow curved alley with colorful houses and plants in front of their doors.">
+                        </li>
+                        <li class="footerInfo__instagram__pic">
+                            <img src="styles/assets/image-21.jpeg" alt="Photo of the back of an older model car in Europe">
+                        </li class="footerInfo__instagram__pic">
+                        <li>
+                            <img src="styles/assets/image-22.jpeg" alt="Photo of colorful houses next to a canal taken from a boat.">
+                        </li>
+                    </ul>
+    
+                </article>
+            </section>
+    
+            <section class="footer__navigation">
+                <h3 class="footer__header">photography</h3>
+                
+                <nav class="navigation">
+                    <ul class="navigation__menu">
+                        <li class="navigation__item">
+                            <a class="navigation__links" href="#">home</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__links" href="#">demos</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__links" href="#">blog</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__links" href="#">pages</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__links" href="#">about us</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+            </section>
         </section>
 
         <section class="socialMediaButtons">
@@ -307,34 +341,10 @@
             </ul>
         </section>
 
-        <section class="footer__navigation wrapper">
-            <h3 class="footer__header">photography</h3>
-
-            <nav class="navigation">
-                <ul class="navigation__menu">
-                    <li class="navigation__item">
-                        <a class="navigation__links" href="#">home</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__links" href="#">demos</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__links" href="#">blog</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__links" href="#">pages</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__links" href="#">about us</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="copyright">
-                <h6 class="copyright__description">2017 all rights reserved &copy;</h6>
-            </div>
-        </section>
-
+        <div class="copyright">
+            <h6 class="copyright__description">2017 all rights reserved &copy;</h6>
+        </div>
+        
     </footer>
 
 </body>

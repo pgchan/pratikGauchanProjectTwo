@@ -80,7 +80,8 @@ img {display: block;}
         text-decoration: none;
         margin-top: 50px;
         border: 1px solid #2a2a2a;
-        padding: 20px 50px;
+        padding: 10px 50px;
+        border-radius: 34px;
     }
 }
 
@@ -129,6 +130,13 @@ img {display: block;}
 }
 
 
+.section__text--italic::before {
+    content: "~";
+}
+
+.section__text--italic::after {
+    content: "~";
+}
 
 /* --------- SECTION: testimonials content -----------*/
 
@@ -169,10 +177,20 @@ img {display: block;}
 
 .latestNews {
     background-color:  #f5f3f3;
+    padding: 100px 0;
     &__sectionBody {justify-content: space-between}
-    &__content {
-        flex-basis: 30%;
+    // &__content {
+    //     // flex-basis: 30%;
+    // }
+    &__header {margin-bottom: 60px}
+
+    &__subHeader {margin: 20px 0 5px 0;}
+    &__link {
+        display: flex;
+        align-items: center;
+        // flex-wrap: wrap;
     }
+
 }
 
 
@@ -188,10 +206,26 @@ img {display: block;}
 //     }
 // }
 
+/* --------- SECTION: ask a question -----------*/
+
+.askAQuestionSection {
+    background-color:  #f2b094;
+}
+
+.askAQuestion {
+    &__sectionBody {flex-direction: column;}
+    &__questionBox {background-color:  #f2b094;}
+    &__button {background-color:  #f2b094;}
+}
+
+
 
 /* --------- SECTION: latest shoots -----------*/
 
-.latestShootsSection {background-color: #efefef;}
+.latestShootsSection {
+    background-color: #efefef;
+    padding: 122px 0;
+}
 
 .latestShoots {
     display: flex;
@@ -200,7 +234,28 @@ img {display: block;}
         background-color:  #606060;
         flex: 1 0 25%;
         margin-right: 2.5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
+
+    &__text {color: #fff;}
+
+    &__menu {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    &__textContainer:hover {
+        background-color: #2a2a2a;
+    }
+
+
+
+
 
     &__gallery {
         display: flex;
@@ -209,6 +264,10 @@ img {display: block;}
         justify-content: space-between;
     }
 }
+
+
+
+
 
 
 .latestShoots__photoContainer {
@@ -235,3 +294,69 @@ img {display: block;}
 .latestShoots__pictureText {
     color: #fff;
 }
+
+
+
+
+/* --------- SECTION: footer -----------*/
+
+.footerWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-between;
+
+    &__contact {flex-basis: 25%;}
+    &__aboutUs {flex-basis: 34%;}
+    &__instagram {
+        flex-basis: 29%;
+        &__content {
+            display: flex;
+            flex-flow: wrap;
+            align-content: stretch
+            // justify-content: space-between;
+            // flex: 1 1 auto;
+        }
+        &__pic {
+            // flex: 1 1 auto;
+            margin: 4px;
+        }
+        // &__pic {
+            
+        // }
+
+    }
+}
+
+
+
+// wrapper {
+//   overflow: hidden;
+//   width: 250px;
+// }
+// container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: -25px;
+// }
+// column {
+//   flex: 0 1 50px;
+// }
+
+// /* demo styles */
+// wrapper {
+//   display: block;
+//   font-family: sans-serif;
+//   outline: 2px solid navy;
+// }
+// column {
+//   line-height: 50px;
+//   margin: 25px;
+//   color: white;
+//   text-align: center;
+//   background: tomato;
+// }
