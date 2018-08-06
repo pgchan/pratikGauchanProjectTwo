@@ -44,7 +44,7 @@
 
             <div class="mainWelcome">
                 <div class="mainWelcome_inner">
-                    <h1 class-"mainWelcome__header">welcome</h1>
+                    <h1 class="mainWelcome__header">welcome</h1>
                     <h5 class="mainWelcome__subHeader">to my photography website</h5>
                     <a href="#" class="section__button">
                         <h5 class="mainWelcome__button__text">start</h5>
@@ -152,11 +152,21 @@
                     <h2 class="sectionHeader__text">happy clients</h2>
                 </header>
                 <section class="sectionBody happyClients__sectionBody">
-                    <figure class="sectionBody__figure">
-                        <img src="styles/assets/image-7.jpeg" alt="Close up picture of a girl." class="happyClients__photo">
-                    </figure>
+                    <article class="happyClients__photoBlock">
+                        <figure class="happyClients__figure">   
+                            <img src="styles/assets/image-7.jpeg" alt="Close up picture of a girl." class="happyClients__photo">
+                        </figure>
+                        <i class="fas fa-chevron-right happyClients__icons__right"></i>
+                        <i class="fas fa-chevron-left happyClients__icons__left"></i>
+                    </article>
+
                     <p class="section__text happyClients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    <p class="section__text--italic">mary jane</p>
+                    <div class="happyClients__clientName">
+                        <p class="section__text--italic">mary jane</p>
+                        <div class="happyClients__clientName__sideBar"></div>
+                        <div class="happyClients__clientName__sideBar"></div>
+                    </div>
+                    
                 </section>
             </section>
            
@@ -264,15 +274,27 @@
                 <article class="footerInfo__section footerInfo__contact">
                     <h3 class="footer__header">contact</h3>
                     <div class="footerInfo__content">
-                        <p><i class="far fa-envelope"></i>info@delicate.com</p>
-                        <p><i class="fas fa-phone"></i>123 456-7890</p>
-                        <p><i class="fas fa-map-marker-alt"></i>Toronto, Ontario</p>
+                        <p class="footerInfo__contact__content">
+                            <i class="far fa-envelope footerInfo__icons"></i>
+                            info@delicate.com
+                        </p>
+                        <p class="footerInfo__contact__content">
+                            <i class="fas fa-phone footerInfo__icons"></i>
+                            123 456-7890
+                        </p>
+                        <p class="footerInfo__contact__content">
+                            <i class="fas fa-map-marker-alt footerInfo__icons"></i>
+                            Toronto, Ontario
+                        </p>
+                        <form action="POST" class="emailLogin footerInfo__form" name="emailLogin" id="emailLogin">
+                            <input type="email" placeholder="your email" id="email" name="email" class="email footerInfo__email">
+                        </form>
                     </div>
                 </article>
     
                 <article class="footerInfo__section footerInfo__aboutUs">
                     <h3 class="footer__header">about us</h3>
-                    <p class="footerInfo_content">We are creative and modern web studio. Newest technologies it’s about us. We keep up with time, your web site will contain all of the best and modern trends. We are making web since 2005. Huge experience - is a best helper.</p>
+                    <p class="footerInfo_content footerInfo__aboutUs__content">We are creative and modern web studio. Newest technologies it’s about us. We keep up with time, your web site will contain all of the best and modern trends. We are making web since 2005. Huge experience - is a best helper.</p>
                 </article>
                 
                 <article class="footerInfo__section footerInfo__instagram">
@@ -335,9 +357,15 @@
 
         <section class="socialMediaButtons">
             <ul>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                <li class="socialMediaButtons__container">
+                    <a href="#"><i class="fab fa-facebook socialMediaButtons__icon socialMediaButtons__facebook"></i></a>
+                </li>
+                <li class="socialMediaButtons__container">
+                    <a href="#"><i class="fab fa-instagram socialMediaButtons__icon socialMediaButtons__instagram"></i></a>
+                </li>
+                <li class="socialMediaButtons__container">
+                    <a href="#"><i class="fab fa-pinterest-p socialMediaButtons__icon socialMediaButtons__pinterest"></i></a>
+                </li>
             </ul>
         </section>
 

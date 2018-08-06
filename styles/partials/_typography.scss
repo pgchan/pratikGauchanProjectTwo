@@ -1,5 +1,5 @@
 body {
-    font-family: 'Catamaran', sans-serif;
+    font-family: $primaryFont;
 }
 
 p {
@@ -14,7 +14,7 @@ p:first-letter {
 header, h3, h5, h6, .navigation__links {
     font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
-    color: #2a2a2a;
+    color: $primaryColor;
 }
 
 ul {
@@ -102,4 +102,15 @@ h6 {
     color:  #285d64;
     font-size: 1.25rem;
     }
+}
+
+
+.socialMediaButtons {
+    &__icon {
+        color: #848484;
+        font-size: 1.563rem;
+    }
+    &__facebook:hover {color: $fbColor}
+    &__instagram:hover {color: $igColor}
+    &__pinterest:hover {color: $piColor}
 }
