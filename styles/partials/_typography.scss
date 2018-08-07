@@ -114,3 +114,27 @@ h6 {
     &__instagram:hover {color: $igColor}
     &__pinterest:hover {color: $piColor}
 }
+
+
+.askAQuestion__questionBox, .askAQuestion__submit {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+//  {
+//     &__questionBox {
+//         font-size: 1.25rem;
+//         text-transform: uppercase;
+//     }
+//     &__submit {
+//         font-size: 1.25rem;
+//         text-transform: uppercase;
+//     }
+// }
+
+
+.happyClients__icons {
+    &__left{ font-size: 2.563rem};
+    &__right{ font-size: 2.563rem};
+
+}

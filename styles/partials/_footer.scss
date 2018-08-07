@@ -1,0 +1,99 @@
+footer {
+    position: relative;
+}
+
+.footerWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 107px;
+
+    &__contact {
+        flex-basis: 25%;
+        &__content {
+            line-height: 1.922;
+        }
+    }
+    &__icons {margin-right: 5px;}
+    &__form {width: 92%;}
+
+    &__aboutUs {
+        flex-basis: 34%;
+        &__content {line-height: 1.625;}
+    }
+    &__instagram {
+        flex-basis: 29%;
+        &__content {
+            display: flex;
+            flex-flow: wrap;
+            align-content: stretch;
+            min-width: 330px;
+            // justify-content: space-between;
+            // flex: 1 1 auto;
+        }
+        &__pic {
+            // flex: 1 1 auto;
+            margin: 4px;
+        }
+    }
+}
+
+.footer__header {
+    margin-bottom: 20px;
+}
+
+.footer__navigation {
+    &__header {text-align: center;}
+    &__menu {
+        justify-content: center;
+        margin: 20px 0 40px 0;
+    }
+    &__item {padding: 0 25px}
+}
+
+        
+.email {
+        width: 100%;
+        height: 2rem;
+        background-image: url("assets/paper-plane-solid.svg");
+        background-repeat: no-repeat;
+        background-position: 95% center;
+        background-size: 0.625rem;
+        // border: 1px solid $primaryColor;
+        // @include borderColor;
+        margin-top: 15px;
+    }
+
+
+
+.socialMediaButtons {
+    position: absolute;
+    right: 0;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    
+    &__container {
+        padding: 20px 0;
+    }
+
+    // &__facebook {}
+    // &__instagram {}
+    // &__pinterest {}
+}
+
+
+.copyright {
+    background-color:  $primaryColor;
+    text-align: center;
+
+    &__description {
+        color:  #eeeded;
+        padding: 5px 0;
+    }
+}

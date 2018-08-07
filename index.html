@@ -42,7 +42,7 @@
                 </nav>
             </section>
 
-            <div class="mainWelcome">
+            <article class="mainWelcome">
                 <div class="mainWelcome_inner">
                     <h1 class="mainWelcome__header">welcome</h1>
                     <h5 class="mainWelcome__subHeader">to my photography website</h5>
@@ -50,7 +50,7 @@
                         <h5 class="mainWelcome__button__text">start</h5>
                     </a>
                 </div>
-            </div>
+            </article>
         </section>
 
     </header>
@@ -111,39 +111,44 @@
         </section>
 
         <section class="sampleShoot">
-
-            <figure class="sampleShoot__figure">
-                <img src="styles/assets/image-3.jpeg" alt="Close up picture of a girl spinning her head." class="sampleShoot_picture">
-                <figcaption>
-                    <h3>sample shoot</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </figcaption>
-            </figure>
-
-            <figure class="sampleShoot__figure">
-                <img src="styles/assets/image-4.jpeg" alt="Photo of the island with church in Lake Bled, Slovenia." class="sampleShoot_picture">
-                <figcaption>
-                    <h3>sample shoot</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </figcaption>
-            </figure>
-
-            <figure class="sampleShoot__figure">
-                <img src="styles/assets/image-5.jpeg" alt="Picture of a beach from the docked boat." class="sampleShoot_picture">
-                <figcaption>
-                    <h3>sample shoot</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </figcaption>
-            </figure>
-
-            <figure class="sampleShoot__figure">
-                <img src="styles/assets/image-6.jpeg" alt="Picture of Maranola, a fishing village perched on the cliffs in Italy" class="sampleShoot_picture">
-                <figcaption>
-                    <h3>sample shoot</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </figcaption>
-            </figure>
-
+            <ul class="sampleShoot__gallery">
+                <li class="sampleShoot__content">
+                    <figure class="sampleShoot__figure">
+                        <img src="styles/assets/image-3.jpeg" alt="Close up picture of a girl spinning her head." class="sampleShoot_picture">
+                        <figcaption class="sampleShoot__captions">
+                            <h3 class="sampleShoot__header">sample shoot</h3>
+                            <p class="sampleShoot__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="sampleShoot__content">
+                    <figure class="sampleShoot__figure">
+                        <img src="styles/assets/image-4.jpeg" alt="Photo of the island with church in Lake Bled, Slovenia." class="sampleShoot_picture">
+                        <figcaption class="sampleShoot__captions">
+                            <h3 class="sampleShoot__header">sample shoot</h3>
+                            <p class="sampleShoot__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="sampleShoot__content">
+                    <figure class="sampleShoot__figure">
+                        <img src="styles/assets/image-5.jpeg" alt="Picture of a beach from the docked boat." class="sampleShoot_picture">
+                        <figcaption class="sampleShoot__captions">
+                            <h3 class="sampleShoot__header">sample shoot</h3>
+                            <p class="sampleShoot__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="sampleShoot__content">
+                    <figure class="sampleShoot__figure">
+                        <img src="styles/assets/image-6.jpeg" alt="Picture of Maranola, a fishing village perched on the cliffs in Italy" class="sampleShoot_picture">
+                        <figcaption class="sampleShoot__captions">
+                            <h3 class="sampleShoot__header">sample shoot</h3>
+                            <p class="sampleShoot__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
         </section>
 
         <section class="happyClientsSection">
@@ -151,14 +156,14 @@
                 <header class="sectionHeader happyClients__header">
                     <h2 class="sectionHeader__text">happy clients</h2>
                 </header>
-                <section class="sectionBody happyClients__sectionBody">
-                    <article class="happyClients__photoBlock">
+                <article class="sectionBody happyClients__sectionBody">
+                    <div class="happyClients__photoBlock">
                         <figure class="happyClients__figure">   
                             <img src="styles/assets/image-7.jpeg" alt="Close up picture of a girl." class="happyClients__photo">
+                            <i class="fas fa-chevron-left happyClients__icons__left"></i>
+                            <i class="fas fa-chevron-right happyClients__icons__right"></i>
                         </figure>
-                        <i class="fas fa-chevron-right happyClients__icons__right"></i>
-                        <i class="fas fa-chevron-left happyClients__icons__left"></i>
-                    </article>
+                    </div>
 
                     <p class="section__text happyClients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                     <div class="happyClients__clientName">
@@ -167,46 +172,46 @@
                         <div class="happyClients__clientName__sideBar"></div>
                     </div>
                     
-                </section>
+                </article>
             </section>
            
 
         </section>
 
         <section class="latestNews">
-            <section class="latestNewsWrapper wrapper">
+            <article class="latestNewsWrapper wrapper">
                 <header class="sectionHeader latestNews__header">
                     <h2 class="sectionHeader__text">latest news</h2>
                 </header>
     
-                <article class="sectionBody latestNews__sectionBody">
+                <div class="sectionBody latestNews__sectionBody">
     
-                    <article class="latestNews__content">
+                    <div class="latestNews__content">
                         <img src="styles/assets/image-8.jpeg" alt="Picture of a coastal city.">
                         <h5 class="latestNews__subHeader">my trip to italy</h5>
                         <a href="#" class="latestNews__link">
                             <h5 class="latestNews__readMore">read more</h5>
                             <i class="fas fa-angle-double-right latestNews__arrow"></i>
                         </a>
-                    </article>
-                    <article class="latestNews__content">
+                    </div>
+                    <div class="latestNews__content">
                         <img src="styles/assets/image-9.jpeg" alt="Picture of two chairs in front of a house with blue doors and windows.">
                         <h5 class="latestNews__subHeader">greece photoshoot</h5>
                         <a href="#" class="latestNews__link">
                             <h5 class="latestNews__readMore">read more</h5>
                             <i class="fas fa-angle-double-right latestNews__arrow"></i>
                         </a>
-                    </article>
-                    <article class="latestNews__content">
+                    </div>
+                    <div class="latestNews__content">
                         <img src="styles/assets/image-10.jpeg" alt="Picture of a coastal city.">
                         <h5 class="latestNews__subHeader">traveling with your partner</h5>
                         <a href="#" class="latestNews__link">
                             <h5 class="latestNews__readMore">read more</h5>
                             <i class="fas fa-angle-double-right latestNews__arrow"></i>
                         </a>
-                    </article>
+                    </div>
                 </article>
-            </section>
+            </article>
         </section>
 
         <section class="askAQuestionSection">
@@ -215,14 +220,15 @@
                     <h2 class="sectionHeader__text">ask a question</h2>
                 </header>
                 <section class="sectionBody askAQuestion__sectionBody">
-                    <textarea name="questionBox" id="questionBox" placeholder ="your message" cols="30" rows="10" class="askAQuestion__questionBox"></textarea>
-                    <button class="section__button askAQuestion__button"><h5>send</h5></button>
+                    <textarea name="questionBox" id="questionBox" placeholder="your message" cols="30" rows="1" class="askAQuestion__questionBox"></textarea>
+                    <input type="submit" value="send" name="submit" class="askAQuestion__submit" id="submit">
+                    <!-- <button class="section__button askAQuestion__button"><h5>send</h5></button> -->
                 </section>
             </section>
         </section>
         
-        <section class="latestShootsSection">
-            <section class="latestShoots wrapper">
+        <!-- <section class="latestShootsSection">
+            <article class="latestShoots wrapper">
                 <div class="latestShoots__nav">
                     <div class="latestShoots__subHeader">
                         <h3 class="latestShoots__text">latest shoots</h3>
@@ -245,33 +251,125 @@
     
                 <div class="latestShoots__gallery">
                     <figure class="latestShoots__photoContainer">
-                        <img src="styles/assets/image-11.jpeg" alt="Picture of a waterfall from above." class="latestShoots__picture">
-                        <h3 class="latestShoots__pictureText">landing page</h3>
+                        <img src="styles/assets/image-11.jpeg" alt="Picture of a waterfall from above." class="latestShoots__photo">
+                        <figcaption class="latestShoots__caption">
+                            <h3 class="latestShoots__pictureText">landing page</h3>
+                        </figcaption>
                     </figure>
                     <figure class="latestShoots__photoContainer">
-                        <img src="styles/assets/image-12.jpeg" alt="Picture of a fishing village on a cliff next to the sea." class="latestShoots__picture">
-                        <h3 class="latestShoots__pictureText">landing page</h3>
+                        <img src="styles/assets/image-12.jpeg" alt="Picture of a fishing village on a cliff next to the sea." class="latestShoots__photo">
+                        <figcaption class="latestShoots__caption">
+                            <h3 class="latestShoots__pictureText">landing page</h3>
+                        </figcaption>
                     </figure>
                     <figure class="latestShoots__photoContainer">
-                        <img src="styles/assets/image-13.jpeg" alt="Picture of sea cliffs with a beach." class="latestShoots__picture">
-                        <h3 class="latestShoots__pictureText">landing page</h3>
+                        <img src="styles/assets/image-13.jpeg" alt="Picture of sea cliffs with a beach." class="latestShoots__photo">
+                        <figcaption class="latestShoots__caption">
+                            <h3 class="latestShoots__pictureText">landing page</h3>
+                        </figcaption>
                     </figure>
                     <figure class="latestShoots__photoContainer">
-                        <img src="styles/assets/image-14.jpeg" alt="Picture of sea cliffs with a beach." class="latestShoots__picture">
-                        <h3 class="latestShoots__pictureText">landing page</h3>
+                        <img src="styles/assets/image-14.jpeg" alt="Picture of sea cliffs with a beach." class="latestShoots__photo">
+                        <figcaption class="latestShoots__caption">
+                            <h3 class="latestShoots__pictureText">landing page</h3>
+                        </figcaption>
                     </figure>
                 </div>
     
-            </section>
+            </article>
+        </section> -->
+
+
+        <section class="latestShootsSection">
+            <article class="latestShoots wrapper">
+                <div class="latestShoots__nav">
+                    <div class="latestShoots__subHeader">
+                        <h3 class="latestShoots__text">latest shoots</h3>
+                    </div>
+                    <ul class="latestShoots__menu">
+                        <li class="latestShoots__textContainer">
+                            <a href="#">
+                                <h3 class="latestShoots__text">all</h3>
+                            </a>
+                        </li>
+                        <li class="latestShoots__textContainer">
+                            <a href="#">
+                                <h3 class="latestShoots__text">weddings</h3>
+                            </a>
+                        </li>
+                        <li class="latestShoots__textContainer">
+                            <a href="#">
+                                <h3 class="latestShoots__text">scenery</h3>
+                            </a>
+                        </li>
+                        <li class="latestShoots__textContainer">
+                            <a href="#">
+                                <h3 class="latestShoots__text">portraits</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+<!-- 
+                <section class="sampleShoot">
+                    <ul class="sampleShoot__gallery">
+                        <li class="sampleShoot__content">
+                            <figure class="sampleShoot__figure">
+                                <img src="styles/assets/image-3.jpeg" alt="Close up picture of a girl spinning her head." class="sampleShoot_picture">
+                                <figcaption class="sampleShoot__captions">
+                                    <h3 class="sampleShoot__header">sample shoot</h3>
+                                    <p class="sampleShoot__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                 -->
+                                
+                <div class="latestShoots__galleryContainer">
+                    <ul class="latestShoots__gallery">
+                        <li class="latestShoots__content">
+                            <figure class="latestShoots__photoContainer">
+                                <img src="styles/assets/image-11.jpeg" alt="Picture of a waterfall from above." class="latestShoots__photo">
+                                <figcaption class="latestShoots__caption">
+                                    <h3 class="latestShoots__pictureText">landing page</h3>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="latestShoots__content">
+                            <figure class="latestShoots__photoContainer">
+                                <img src="styles/assets/image-12.jpeg" alt="Picture of a fishing village on a cliff next to the sea." class="latestShoots__photo">
+                                <figcaption class="latestShoots__caption">
+                                    <h3 class="latestShoots__pictureText">landing page</h3>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="latestShoots__content">
+                            <figure class="latestShoots__photoContainer">
+                                <img src="styles/assets/image-13.jpeg" alt="Picture of sea cliffs with a beach." class="latestShoots__photo">
+                                <figcaption class="latestShoots__caption">
+                                    <h3 class="latestShoots__pictureText">landing page</h3>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="latestShoots__content">
+                            <figure class="latestShoots__photoContainer">
+                                <img src="styles/assets/image-14.jpeg" alt="Picture of sea cliffs with a beach." class="latestShoots__photo">
+                                <figcaption class="latestShoots__caption">
+                                    <h3 class="latestShoots__pictureText">landing page</h3>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </article>
         </section>
+
 
     </main>
 
     <footer>
 
         <section class="footerWrapper wrapper">
-            <section class="footerInfo">
-                <article class="footerInfo__section footerInfo__contact">
+            <article class="footerInfo">
+                <div class="footerInfo__section footerInfo__contact">
                     <h3 class="footer__header">contact</h3>
                     <div class="footerInfo__content">
                         <p class="footerInfo__contact__content">
@@ -290,14 +388,14 @@
                             <input type="email" placeholder="your email" id="email" name="email" class="email footerInfo__email">
                         </form>
                     </div>
-                </article>
+                </div>
     
-                <article class="footerInfo__section footerInfo__aboutUs">
+                <div class="footerInfo__section footerInfo__aboutUs">
                     <h3 class="footer__header">about us</h3>
                     <p class="footerInfo_content footerInfo__aboutUs__content">We are creative and modern web studio. Newest technologies it’s about us. We keep up with time, your web site will contain all of the best and modern trends. We are making web since 2005. Huge experience - is a best helper.</p>
-                </article>
+                </div>
                 
-                <article class="footerInfo__section footerInfo__instagram">
+                <div class="footerInfo__section footerInfo__instagram">
                     <h3 class="footer__header">instagram</h3>
                     <ul class="footerInfo__content footerInfo__instagram__content">
                         <li class="footerInfo__instagram__pic">
@@ -321,38 +419,38 @@
                         <li class="footerInfo__instagram__pic">
                             <img src="styles/assets/image-21.jpeg" alt="Photo of the back of an older model car in Europe">
                         </li class="footerInfo__instagram__pic">
-                        <li>
+                        <li class="footerInfo__instagram__pic">
                             <img src="styles/assets/image-22.jpeg" alt="Photo of colorful houses next to a canal taken from a boat.">
                         </li>
                     </ul>
     
-                </article>
-            </section>
+                </div>
+            </article>
     
-            <section class="footer__navigation">
-                <h3 class="footer__header">photography</h3>
+            <article class="footer__navigation">
+                <h3 class="footer__navheader footer__navigation__header">photography</h3>
                 
                 <nav class="navigation">
-                    <ul class="navigation__menu">
-                        <li class="navigation__item">
+                    <ul class="navigation__menu footer__navigation__menu">
+                        <li class="footer__navigation__item">
                             <a class="navigation__links" href="#">home</a>
                         </li>
-                        <li class="navigation__item">
+                        <li class="footer__navigation__item">
                             <a class="navigation__links" href="#">demos</a>
                         </li>
-                        <li class="navigation__item">
+                        <li class="footer__navigation__item">
                             <a class="navigation__links" href="#">blog</a>
                         </li>
-                        <li class="navigation__item">
+                        <li class="footer__navigation__item">
                             <a class="navigation__links" href="#">pages</a>
                         </li>
-                        <li class="navigation__item">
+                        <li class="footer__navigation__item">
                             <a class="navigation__links" href="#">about us</a>
                         </li>
                     </ul>
                 </nav>
     
-            </section>
+            </article>
         </section>
 
         <section class="socialMediaButtons">

@@ -3,3 +3,11 @@ $primaryFont: 'Catamaran', sans-serif;
 $fbColor: #3b5998;
 $igColor:  #c32aa3;
 $piColor: #bd081c;
+
+@mixin button {
+    border: 1px solid $primaryColor;
+    padding: 10px 50px;
+    border-radius: 34px;
+    display: inline-block;
+    width: 160px;
+}

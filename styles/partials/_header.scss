@@ -1,0 +1,39 @@
+
+.mainHeader {
+    background-image: url("assets/image-1.jpeg");
+    // padding: 17vw 0;
+    height: 97vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.mainHeaderNav{
+    margin: 45px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    &__menu {display: flex;}
+    &__item {padding-left: 40px;}
+}
+
+.mainWelcome {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28vh;
+
+    &__header {margin-bottom: -22px;}
+
+    &__button__text {
+        // border: 1px solid $primaryColor;
+        // padding: 10px 53px;
+        // border-radius: 30px;
+        @include button;
+        // display: inline-block;
+        margin-top: 8px;
+        width: 170px;
+    }
+}

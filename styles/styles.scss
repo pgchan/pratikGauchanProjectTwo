@@ -35,43 +35,6 @@ img {
 
 // main welcome page//
 
-.mainHeader {
-    background-image: url("assets/image-1.jpeg");
-    // padding: 17vw 0;
-    height: 97vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.mainHeaderNav{
-    margin: 45px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navigation {
-    &__menu {display: flex;}
-    &__item {padding-left: 40px;}
-}
-
-.mainWelcome {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 28vh;
-
-    &__header {margin-bottom: -22px;}
-
-    &__button__text {
-        border: 1px solid $primaryColor;
-        padding: 10px 53px;
-        display: inline-block;
-        border-radius: 30px;
-        margin-top: 8px;
-    }
-}
-
 
 
 /* --------- SECTION: WELCOME -----------*/
@@ -85,11 +48,12 @@ img {
     &__header { margin-bottom: 50px}
     &__text {padding: 0 113px}
     &__buttonText {
-        text-decoration: none;
+        // border: 1px solid $primaryColor;
+        // padding: 10px 50px;
+        // border-radius: 34px;
+        @include button;
+        // text-decoration: none;
         margin-top: 50px;
-        border: 1px solid $primaryColor;
-        padding: 10px 50px;
-        border-radius: 34px;
     }
 }
 
@@ -125,6 +89,7 @@ img {
 
     &__photoBlock {
         position: relative;
+        display: flex;
     }
 
     &__sectionBody {
@@ -132,7 +97,12 @@ img {
     flex-direction: column;
     }
 
-    // &__figure {}
+    &__figure {
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+        overflow: visible;
+    }
 
     &__photo {
         margin-left: auto;
@@ -142,12 +112,12 @@ img {
         &__left {
             position: absolute;
             top: 50%;
-            left: 0;
+            left: -15%;
         }
-        &right__{
+        &__right{
             position: absolute;
             top: 50%;
-            right: 0;
+            right: -15%;
         }
     }
     
@@ -232,14 +202,39 @@ img {
 .sampleShoot {
     display: flex;
     justify-content: center;
+    &__gallery {
+        display: flex;
+        // flex-wrap: wrap;
+    }
 
-//     &__figure {flex: 1;}
-    &__picture {
-        max-width: 100%;
-        flex: 1 1 auto;
-        margin-bottom: -10px;
+    &__content {position: relative;}
+    &__captions {display: none;}
+    // &__content:hover .sampleShoot__figure .sampleShoot__captions {
+    &__figure:hover .sampleShoot__captions {
+        color: #fff;
+        text-align: center;
+        padding-top: 20%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+    }
+    &__header {color: #fff;}
+    &__text {
+        padding: 0 21%;
+        margin-top: 3%;
     }
 }
+
+
+
+
+
+/* --------- SECTION: latest news -----------*/
+
 
 .latestNews {
     background-color:  #f5f3f3;
@@ -263,7 +258,7 @@ img {
 }
 
 
-/* --------- SECTION: latest news -----------*/
+
 
 
 
@@ -279,14 +274,36 @@ img {
 
 .askAQuestionSection {
     background-color:  #f2b094;
+    padding: 100px 0;
 }
 
 .askAQuestion {
+    // padding: 100px 0;
     &__sectionBody {flex-direction: column;}
-    &__questionBox {background-color:  #f2b094;}
-    &__button {background-color:  #f2b094;}
+    &__questionBox {
+        background-color:  #f2b094;
+        margin: 38px 50px 50px 50px;
+        border: none;
+        border-top: 1px solid $primaryColor;
+        border-bottom: 1px solid $primaryColor;
+        padding: 7px 0;
+        }
+    &__submit {
+        @include button;
+        background-color:  #f2b094;
+        // width: 150px;
+        margin: 0 auto;
+    }
+}
+textarea:focus {
+    outline-width: 0;
 }
 
+
+::placeholder {
+   text-align: center;
+   color: $primaryColor;
+}
 
 
 /* --------- SECTION: latest shoots -----------*/
@@ -301,7 +318,7 @@ img {
 
     &__nav {
         background-color:  #606060;
-        flex: 1 0 25%;
+        flex: 1 0 24%;
         margin-right: 2.5%;
         text-align: center;
         display: flex;
@@ -320,126 +337,213 @@ img {
     
     &__textContainer:hover {
         background-color: $primaryColor;
+        transition: 0.5s;
     }
+    &__galleryContainer {
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        flex: 1 0 58%;
+    }
+
+
+
 
     &__gallery {
         display: flex;
         flex-wrap: wrap;
-        flex: 2 0 52%;
         justify-content: space-between;
+        }  
+        
+    &__gallery li:nth-child(-n+2) {
+        margin-bottom: 20px
     }
-}
+
+    &__content {position: relative;}
+    &__caption {display: none;}
+
+  
+
+    &__latestShoots__content:hover .latstShoots__photoContainer .latestShoots__caption {
+        color: #fff;
+        text-align: center;
+        padding-top: 20%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+        }
+
+    }
 
 
-.latestShoots__photoContainer {
-    position: relative;
-}
+    // &__gallery {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     flex: 2 0 52%;
+    //     justify-content: space-between;
+    // }
+    // &__photoContainer {
+    //     position: relative;
+    //     background-color: black;
+    //     opacity: 1;
+    // }
+    // &__photo {opacity: 1}
+    // &__pictureText {color: #fff;}
 
-.latestShoots__pictureText {
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    transform: translate(31%, -50%);
-    visibility: hidden;
-}
 
-.latestShoots__photoContainer:hover {
-    // position: relative;
+        // &__gallery {
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     flex: 2 0 52%;
+        //     justify-content: space-between; 
+        //     position: relative;
+        // }
+        // &__caption {display: none;}
+        // &__photoContainer:hover .latestShoots__caption {
+        //     color: #fff;
+        //     text-align: center;
+        //     padding-top: 20%;
+        //     display: block;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+        // }
+        
 
-    opacity: 0.3;
-    // background: rgba(42, 42, 42, 0.7);
-    // visibility: visible;
 
-}
 
-.latestShoots__pictureText {
-    color: #fff;
-}
+// .latestShoots__photoContainer:hover .latestShoots__photo {
+//     opacity: 0.3;
+// }
+
+// .latestShoots__photoContainer:hover .latestShoots__caption {
+//     opacity: 1; 
+// }
+    
+// .latestShoots__photoContainer .latestShoots__photo,
+// .latestShoots__caption {
+//     transition: opacity 0.5s ease-out;
+// }
+
+// .latestShoots__caption {
+//     position: absolute;
+//     left: 0;
+//     top: 40%;
+//     right: 0;
+//     text-align: center;
+//     opacity: 0;
+// }
+
+
+
+// .latestShoots__photoContainer .latestShoots__photo {
+//     opacity: 1;
+// }
+
+// .latestShoots__photoContainer:hover .latestShoots__photo {
+//     opacity: 0.3;
+// }
+
+// .latestShoots__photoContainer:hover .latestShoots__caption {
+//     opacity: 1; 
+// }
+    
+
+// .latestShoots__photoContainer .latestShoots__photo,
+// .latestShoots__caption {
+//     transition: opacity 0.5s ease-out;
+// }
+
+// .latestShoots__caption {
+//     position: absolute;
+//     left: 0;
+//     top: 40%;
+//     right: 0;
+//     text-align: center;
+//     opacity: 0;
+// }
 
 
 
 
 /* --------- SECTION: footer -----------*/
 
-footer {
-    position: relative;
+@media only screen and (max-width: 1200px) {
+
+    .mainTitle {margin-left: 3%}
+    .navigation {margin-right: 3%}
+
+    .testimonials {
+        &__body {flex-direction: column;}
+        &__figure {margin: 0 auto;}
+        &__content {padding: 0px 5%;}
+        &__subHeader {margin-top: 10%;}
+    }
+
+    .sampleShoot {
+        &__gallery {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        &__content {padding: 20px;}
+    }
 }
 
-.footerWrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 110px;
-}
-
-.footerInfo {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 115px;
-
-    &__contact {
-        flex-basis: 25%;
+@media only screen and (max-width: 1140px) {
+    .latestNews {
+        &__sectionBody {flex-wrap: wrap}
         &__content {
-            line-height: 1.922;
-        }
-    }
-    &__icons {margin-right: 5px;}
-    &__form {width: 92%;}
-
-    &__aboutUs {
-        flex-basis: 34%;
-        &__content {line-height: 1.625;}
-    }
-    &__instagram {
-        flex-basis: 29%;
-        &__content {
-            display: flex;
-            flex-flow: wrap;
-            align-content: stretch
-            // justify-content: space-between;
-            // flex: 1 1 auto;
-        }
-        &__pic {
-            // flex: 1 1 auto;
-            margin: 4px;
+            margin: 0 auto;
+            margin-bottom: 30px;
         }
     }
 }
 
+@media only screen and (max-width: 1096px) {
+    .latestShoots {
+        flex-wrap: wrap;
+
+        &__content {
+            padding: 3%;
+            justify-content: center;
+        }
+
+        &__nav {flex-basis: 100%;}
+        &__menu {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
         
-.email {
-        width: 100%;
-        height: 2rem;
-        background-image: url("assets/paper-plane-solid.svg");
-        background-repeat: no-repeat;
-        background-position: 95% center;
-        background-size: 0.625rem;
-        border: 1px solid $primaryColor;
-        margin-top: 15px;
     }
 
-
-
-.socialMediaButtons {
-    position: absolute;
-    right: 0;
-    top: 55%;
-    transform: translate(-50%,-50%);
-    
-    &__container {
-        padding: 20px 0;
-    }
-
-    &__facebook {}
-    &__instagram {}
-    &__pinterest {}
 }
 
+@media only screen and (max-width: 1050px) {
+    .mainHeader {height: 70vh;}
+    .mainWelcome {margin-top: 0;}
+    .services {
+        &__sectionBody {flex-direction: column;}
+        &__content {    
+            margin-bottom: 40px;
+            padding: 0 20%;
+        }
+    }
 
+}
 
-
-.copyright {
-    background-color:  $primaryColor;
-    text-align: center;
-
-    &__description {color:  #eeeded;}
+@media only screen and (max-width: 818px) {
+    .latestShoots {
+        &___content {margin: 0 auto;}
+        &__menu {flex-direction: column;}
+        &__latestshoots__textContainer {
+            padding: 20px 0;
+        }
+    }
 }
