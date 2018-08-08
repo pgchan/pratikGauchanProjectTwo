@@ -222,7 +222,7 @@ h6 {
     color: #2a2a2a; }
 
 .mainHeader {
-  background-image: url("assets/image-1.jpeg");
+  background: url("assets/image-1.jpeg");
   height: 97vh;
   background-size: cover;
   background-position: center;
@@ -845,7 +845,7 @@ textarea:focus {
     -ms-flex-direction: column;
     flex-direction: column; }
   .services__content {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     padding: 0 20%; }
   .latestShoots__subHeader {
     height: 66px; } }
@@ -857,12 +857,23 @@ textarea:focus {
     margin-bottom: 30px; } }
 
 @media only screen and (max-width: 850px) {
+  .mainHeader {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("assets/image-1.jpeg");
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("assets/image-1.jpeg");
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("assets/image-1.jpeg");
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("assets/image-1.jpeg"); }
+  .mainWelcome {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .mainWelcome__button {
+      margin-left: 20%; }
   .navigation__label {
     margin-right: 10px;
     display: inline-block; }
   .headerNavigation {
-    position: fixed;
-    right: 0; }
+    position: relative;
+    right: 10px; }
   .headerNavigation__menu {
     background: #2a2a2a;
     width: 118px;
@@ -871,14 +882,19 @@ textarea:focus {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    position: fixed; }
+    position: fixed;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
   .headerNavigation__item {
     margin: 10px;
     padding-left: 0; }
-  .headerNavigation.input:checked + .headerNavigation__menu {
+  .navigation__toggle:checked ~ .headerNavigation__menu {
     right: 0px; }
   .headerNavigation__links {
-    color: #fff; } }
+    color: #fff; }
+  .latestShoots__textContainer {
+    height: 60px; } }
 
 @media only screen and (max-width: 818px) {
   .latestShoots__gallery {

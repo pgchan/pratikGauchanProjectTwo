@@ -1,6 +1,6 @@
 
 .mainHeader {
-    background-image: url("assets/image-1.jpeg");
+    background: url("assets/image-1.jpeg");
     height: 97vh;
     background-size: cover;
     background-position: center;
@@ -41,25 +41,14 @@
 
 .headerNavigation__item {height: 36px;}
 
-
 .headernavigation__menu {
     width: 20%;
     position: fixed;
     right: -20%;
     z-index: 10;
-    // flex-direction: column;
 }
 
 .headerNavigation__links {border-bottom: 3px solid transparent;}
 .headerNavigation__links:hover {border-bottom: 3px solid $primaryColor;}
 
-.headerNavigation ul {
-    // flex-direction: column;
-    // position: absolute;
-}
-
-input:checked + .headerNavigation__menu
-     {
-    // display: block;
-    right: 0;
-}
+input:checked + .headerNavigation__menu {right: 0;}
