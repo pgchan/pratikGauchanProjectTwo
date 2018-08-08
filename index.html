@@ -9,41 +9,42 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    
     <title>Photography Website</title>
 
 </head>
 <body>
     <header class="mainHeader">
         <section class="mainHeaderInner wrapper">
-
-            <section class="mainHeaderNav">
+            <article class="mainHeaderNav">
                 <div class="mainTitle">
                     <h3 class="mainTitle__header">photography</h3>
                 </div>
-                <nav class="navigation">
-                    <ul class="navigation__menu">
-                        <li class="navigation__item">
-                            <a class="navigation__links" href="#">home</a>
+                <nav class="navigation headerNavigation">
+                    <input type="checkbox" id="toggle" name="toggle" class="navigation__toggle">
+                    <label for="toggle" class="navigation__label">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                    <ul class="navigation__menu headerNavigation__menu">
+                        <li class="navigation__item headerNavigation__item">
+                            <a class="navigation__links headerNavigation__links" href="#">home</a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__links" href="#">gallery</a>
+                        <li class="navigation__item headerNavigation__item">
+                            <a class="navigation__links headerNavigation__links" href="#">gallery</a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__links" href="#">blog</a>
+                        <li class="navigation__item headerNavigation__item">
+                            <a class="navigation__links headerNavigation__links" href="#">blog</a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__links" href="#">bookings</a>
+                        <li class="navigation__item headerNavigation__item">
+                            <a class="navigation__links headerNavigation__links" href="#">bookings</a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__links" href="#">about us</a>
+                        <li class="navigation__item headerNavigation__item">
+                            <a class="navigation__links headerNavigation__links" href="#">about us</a>
                         </li>
                     </ul>
                 </nav>
-            </section>
-
+            </article>
             <article class="mainWelcome">
-                <div class="mainWelcome_inner">
+                <div class="mainWelcome__inner">
                     <h1 class="mainWelcome__header">welcome</h1>
                     <h5 class="mainWelcome__subHeader">to my photography website</h5>
                     <a href="#" class="section__button">
@@ -52,7 +53,6 @@
                 </div>
             </article>
         </section>
-
     </header>
 
     <main>
@@ -105,9 +105,7 @@
                     <h3 class="testimonials__subHeader">kate sampson</h3>
                     <p class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lob rtis ligula. Phasellus gravida ante eleifend metus viverra, id tincid nibh vulputate. Donec sem odio, condimentum non aliquet vel,</p>
                 </div>
-                
             </article>
-
         </section>
 
         <section class="sampleShoot">
@@ -160,11 +158,10 @@
                     <div class="happyClients__photoBlock">
                         <figure class="happyClients__figure">   
                             <img src="styles/assets/image-7.jpeg" alt="Close up picture of a girl." class="happyClients__photo">
-                            <i class="fas fa-chevron-left happyClients__icons__left"></i>
-                            <i class="fas fa-chevron-right happyClients__icons__right"></i>
+                            <i class="fas fa-chevron-left happyClients__icons happyClients__icons__left"></i>
+                            <i class="fas fa-chevron-right happyClients__icons happyClients__icons__right"></i>
                         </figure>
                     </div>
-
                     <p class="section__text happyClients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                     <div class="happyClients__clientName">
                         <p class="section__text--italic">mary jane</p>
@@ -174,8 +171,6 @@
                     
                 </article>
             </section>
-           
-
         </section>
 
         <section class="latestNews">
@@ -183,16 +178,16 @@
                 <header class="sectionHeader latestNews__header">
                     <h2 class="sectionHeader__text">latest news</h2>
                 </header>
-    
                 <div class="sectionBody latestNews__sectionBody">
-    
                     <div class="latestNews__content">
                         <img src="styles/assets/image-8.jpeg" alt="Picture of a coastal city.">
                         <h5 class="latestNews__subHeader">my trip to italy</h5>
-                        <a href="#" class="latestNews__link">
-                            <h5 class="latestNews__readMore">read more</h5>
-                            <i class="fas fa-angle-double-right latestNews__arrow"></i>
-                        </a>
+                        <div class="latestNews__readMoreContainer">
+                            <a href="#" class="latestNews__link">
+                                <h5 class="latestNews__readMore">read more</h5>
+                                <i class="fas fa-angle-double-right latestNews__arrow"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="latestNews__content">
                         <img src="styles/assets/image-9.jpeg" alt="Picture of two chairs in front of a house with blue doors and windows.">
@@ -222,64 +217,10 @@
                 <section class="sectionBody askAQuestion__sectionBody">
                     <textarea name="questionBox" id="questionBox" placeholder="your message" cols="30" rows="1" class="askAQuestion__questionBox"></textarea>
                     <input type="submit" value="send" name="submit" class="askAQuestion__submit" id="submit">
-                    <!-- <button class="section__button askAQuestion__button"><h5>send</h5></button> -->
                 </section>
             </section>
         </section>
         
-        <!-- <section class="latestShootsSection">
-            <article class="latestShoots wrapper">
-                <div class="latestShoots__nav">
-                    <div class="latestShoots__subHeader">
-                        <h3 class="latestShoots__text">latest shoots</h3>
-                    </div>
-                    <ul class="latestShoots__menu">
-                        <li class="latestShoots__textContainer">
-                            <a href="#"><h3 class="latestShoots__text">all</h3></a>
-                        </li>
-                        <li class="latestShoots__textContainer">
-                            <a href="#"><h3 class="latestShoots__text">weddings</h3></a>
-                        </li>
-                        <li class="latestShoots__textContainer">
-                            <a href="#"><h3 class="latestShoots__text">scenery</h3></a>
-                        </li>
-                        <li class="latestShoots__textContainer">
-                            <a href="#"><h3 class="latestShoots__text">portraits</h3></a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="latestShoots__gallery">
-                    <figure class="latestShoots__photoContainer">
-                        <img src="styles/assets/image-11.jpeg" alt="Picture of a waterfall from above." class="latestShoots__photo">
-                        <figcaption class="latestShoots__caption">
-                            <h3 class="latestShoots__pictureText">landing page</h3>
-                        </figcaption>
-                    </figure>
-                    <figure class="latestShoots__photoContainer">
-                        <img src="styles/assets/image-12.jpeg" alt="Picture of a fishing village on a cliff next to the sea." class="latestShoots__photo">
-                        <figcaption class="latestShoots__caption">
-                            <h3 class="latestShoots__pictureText">landing page</h3>
-                        </figcaption>
-                    </figure>
-                    <figure class="latestShoots__photoContainer">
-                        <img src="styles/assets/image-13.jpeg" alt="Picture of sea cliffs with a beach." class="latestShoots__photo">
-                        <figcaption class="latestShoots__caption">
-                            <h3 class="latestShoots__pictureText">landing page</h3>
-                        </figcaption>
-                    </figure>
-                    <figure class="latestShoots__photoContainer">
-                        <img src="styles/assets/image-14.jpeg" alt="Picture of sea cliffs with a beach." class="latestShoots__photo">
-                        <figcaption class="latestShoots__caption">
-                            <h3 class="latestShoots__pictureText">landing page</h3>
-                        </figcaption>
-                    </figure>
-                </div>
-    
-            </article>
-        </section> -->
-
-
         <section class="latestShootsSection">
             <article class="latestShoots wrapper">
                 <div class="latestShoots__nav">
@@ -308,21 +249,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-<!-- 
-                <section class="sampleShoot">
-                    <ul class="sampleShoot__gallery">
-                        <li class="sampleShoot__content">
-                            <figure class="sampleShoot__figure">
-                                <img src="styles/assets/image-3.jpeg" alt="Close up picture of a girl spinning her head." class="sampleShoot_picture">
-                                <figcaption class="sampleShoot__captions">
-                                    <h3 class="sampleShoot__header">sample shoot</h3>
-                                    <p class="sampleShoot__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </figcaption>
-                            </figure>
-                        </li>
-                 -->
-                                
+                </div>           
                 <div class="latestShoots__galleryContainer">
                     <ul class="latestShoots__gallery">
                         <li class="latestShoots__content">
@@ -361,14 +288,11 @@
                 </div>
             </article>
         </section>
-
-
     </main>
 
     <footer>
-
-        <section class="footerWrapper wrapper">
-            <article class="footerInfo">
+        <section class="footerWrapper ">
+            <article class="footerInfo wrapper">
                 <div class="footerInfo__section footerInfo__contact">
                     <h3 class="footer__header">contact</h3>
                     <div class="footerInfo__content">
@@ -389,12 +313,10 @@
                         </form>
                     </div>
                 </div>
-    
                 <div class="footerInfo__section footerInfo__aboutUs">
                     <h3 class="footer__header">about us</h3>
                     <p class="footerInfo_content footerInfo__aboutUs__content">We are creative and modern web studio. Newest technologies it’s about us. We keep up with time, your web site will contain all of the best and modern trends. We are making web since 2005. Huge experience - is a best helper.</p>
                 </div>
-                
                 <div class="footerInfo__section footerInfo__instagram">
                     <h3 class="footer__header">instagram</h3>
                     <ul class="footerInfo__content footerInfo__instagram__content">
@@ -423,14 +345,31 @@
                             <img src="styles/assets/image-22.jpeg" alt="Photo of colorful houses next to a canal taken from a boat.">
                         </li>
                     </ul>
-    
-                </div>
+                </div>                
             </article>
-    
-            <article class="footer__navigation">
+            <article class="socialMediaButtons">
+                <ul>
+                    <li class="socialMediaButtons__container">
+                        <a href="#">
+                            <i class="fab fa-facebook socialMediaButtons__icon socialMediaButtons__facebook"></i>
+                        </a>
+                    </li>
+                    <li class="socialMediaButtons__container">
+                        <a href="#">
+                            <i class="fab fa-instagram socialMediaButtons__icon socialMediaButtons__instagram"></i>
+                        </a>
+                    </li>
+                    <li class="socialMediaButtons__container">
+                        <a href="#">
+                            <i class="fab fa-pinterest-p socialMediaButtons__icon socialMediaButtons__pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="footer__navigation wrapper">
                 <h3 class="footer__navheader footer__navigation__header">photography</h3>
                 
-                <nav class="navigation">
+                <nav class="navigation footerNavigation">
                     <ul class="navigation__menu footer__navigation__menu">
                         <li class="footer__navigation__item">
                             <a class="navigation__links" href="#">home</a>
@@ -444,33 +383,16 @@
                         <li class="footer__navigation__item">
                             <a class="navigation__links" href="#">pages</a>
                         </li>
-                        <li class="footer__navigation__item">
+                        <li class="footer__navigation__item footer__last">
                             <a class="navigation__links" href="#">about us</a>
                         </li>
                     </ul>
                 </nav>
-    
             </article>
         </section>
-
-        <section class="socialMediaButtons">
-            <ul>
-                <li class="socialMediaButtons__container">
-                    <a href="#"><i class="fab fa-facebook socialMediaButtons__icon socialMediaButtons__facebook"></i></a>
-                </li>
-                <li class="socialMediaButtons__container">
-                    <a href="#"><i class="fab fa-instagram socialMediaButtons__icon socialMediaButtons__instagram"></i></a>
-                </li>
-                <li class="socialMediaButtons__container">
-                    <a href="#"><i class="fab fa-pinterest-p socialMediaButtons__icon socialMediaButtons__pinterest"></i></a>
-                </li>
-            </ul>
-        </section>
-
         <div class="copyright">
             <h6 class="copyright__description">2017 all rights reserved &copy;</h6>
         </div>
-        
     </footer>
 
 </body>

@@ -4,12 +4,8 @@ body {
 
 p {
     font-family: 'Lato', sans-serif;
+    &:first-letter {text-transform: capitalize;}
 }
-
-p:first-letter {
-    text-transform: capitalize;
-}
-
 
 header, h3, h5, h6, .navigation__links {
     font-family: 'Catamaran', sans-serif;
@@ -46,12 +42,6 @@ h6 {
 }
 
 
-
-
-
-
-
-
 .section {
 
     &__text {
@@ -74,21 +64,12 @@ h6 {
 
 .sectionHeader__text {
     text-align: center;
-
-    &--darkBlue {
-        color: #285d64;
-    }
+    &--darkBlue {color: #285d64;}
 }
-
 
 .services__icon {
     font-size: 3.75rem;
 }
-
-
-
-
-// width: calc((100% / 3) - 20px);
 
 
 .testimonials__text {
@@ -121,20 +102,8 @@ h6 {
     text-transform: uppercase;
 }
 
-//  {
-//     &__questionBox {
-//         font-size: 1.25rem;
-//         text-transform: uppercase;
-//     }
-//     &__submit {
-//         font-size: 1.25rem;
-//         text-transform: uppercase;
-//     }
-// }
-
-
 .happyClients__icons {
-    &__left{ font-size: 2.563rem};
-    &__right{ font-size: 2.563rem};
-
+    font-size: 2.563rem;
+    color:  #cacecf;
+    &:hover {color: $primaryColor}
 }

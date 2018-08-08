@@ -1,7 +1,6 @@
 
 .mainHeader {
     background-image: url("assets/image-1.jpeg");
-    // padding: 17vw 0;
     height: 97vh;
     background-size: cover;
     background-position: center;
@@ -15,10 +14,15 @@
     align-items: center;
 }
 
+
 .navigation {
+    &__label {display: none;}
+    &__toggle {display: none;}
     &__menu {display: flex;}
     &__item {padding-left: 40px;}
 }
+
+.fa-bars {font-size: 1.5rem;}
 
 .mainWelcome {
     display: flex;
@@ -28,12 +32,34 @@
     &__header {margin-bottom: -22px;}
 
     &__button__text {
-        // border: 1px solid $primaryColor;
-        // padding: 10px 53px;
-        // border-radius: 30px;
         @include button;
-        // display: inline-block;
         margin-top: 8px;
         width: 170px;
+        &:hover {background-color: rgba(0, 0, 0, 0.1)}
     }
+}
+
+.headerNavigation__item {height: 36px;}
+
+
+.headernavigation__menu {
+    width: 20%;
+    position: fixed;
+    right: -20%;
+    z-index: 10;
+    // flex-direction: column;
+}
+
+.headerNavigation__links {border-bottom: 3px solid transparent;}
+.headerNavigation__links:hover {border-bottom: 3px solid $primaryColor;}
+
+.headerNavigation ul {
+    // flex-direction: column;
+    // position: absolute;
+}
+
+input:checked + .headerNavigation__menu
+     {
+    // display: block;
+    right: 0;
 }

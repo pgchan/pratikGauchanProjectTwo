@@ -5,11 +5,9 @@
 @import "partials/_footer.scss";
 
 
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     overflow: auto;
 }
 
@@ -32,11 +30,6 @@ img {
     max-width: 100%;
 }
 
-
-// main welcome page//
-
-
-
 /* --------- SECTION: WELCOME -----------*/
 
 .welcome {
@@ -48,12 +41,9 @@ img {
     &__header { margin-bottom: 50px}
     &__text {padding: 0 113px}
     &__buttonText {
-        // border: 1px solid $primaryColor;
-        // padding: 10px 50px;
-        // border-radius: 34px;
         @include button;
-        // text-decoration: none;
         margin-top: 50px;
+        &:hover {background-color: rgba(0, 0, 0, 0.1);}
     }
 }
 
@@ -66,9 +56,9 @@ img {
     &__sectionBody {justify-content: space-around}
     &__content {
         flex-basis: 30%;
-        // padding: 0 60px;
         text-align: center;   
     }
+
     &__header {margin-bottom: 60px;}
     &__icon {margin-bottom: 12px;}
     &__text {
@@ -76,6 +66,10 @@ img {
         padding: 0px 12%;
     }
 }
+
+.fa-camera:hover {color: #8a3ab9}
+.fa-leaf:hover {color: darkgreen}
+.fa-heart:hover {color: red}
 
 
 /* --------- SECTION: happy clients -----------*/
@@ -86,15 +80,14 @@ img {
     padding: 100px 0 130px 0;
 
     &__header {margin-bottom: 55px;}
-
     &__photoBlock {
         position: relative;
         display: flex;
     }
 
     &__sectionBody {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     &__figure {
@@ -108,22 +101,16 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+
     &__icons {
-        &__left {
-            position: absolute;
-            top: 50%;
-            left: -15%;
-        }
-        &__right{
-            position: absolute;
-            top: 50%;
-            right: -15%;
-        }
+        position: absolute;
+        top: 40%;
+        
+        &__left {left: -31%;}
+        &__right{right: -31%;}
     }
     
-    &__icons__{position: absolute}
-
-
+    &__icons{position: absolute}
     &__text { 
         padding: 0 12%;
         margin: 78px 0 75px 0;
@@ -148,39 +135,18 @@ img {
             top: -10%;
             right: 0;
         }
-        
-
-
     }
 }
 
-
-// .section__text--italic::before {
-//     content: "~";
-
-
-
-//     content: '“';
-// font-size: 30px;
-// position: absolute;
-// left: 37px;
-// top: 1px;
-
-// }
-
-// .section__text--italic::after {
-//     content: "~";
-// }
 
 /* --------- SECTION: testimonials content -----------*/
 
 
 .testimonials {
     padding: 120px 0;
+
     &__header {margin-bottom: 50px;}
-
     &__figure {flex: 1 0 6%;}
-
     &__content {
         flex: 1 0 15%;
         display: flex;
@@ -193,7 +159,6 @@ img {
     }
 
     &__text {line-height: 1.583}
-
 }
 
 
@@ -202,14 +167,10 @@ img {
 .sampleShoot {
     display: flex;
     justify-content: center;
-    &__gallery {
-        display: flex;
-        // flex-wrap: wrap;
-    }
 
+    &__gallery {display: flex;}
     &__content {position: relative;}
     &__captions {display: none;}
-    // &__content:hover .sampleShoot__figure .sampleShoot__captions {
     &__figure:hover .sampleShoot__captions {
         color: #fff;
         text-align: center;
@@ -220,7 +181,7 @@ img {
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+        background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
     }
     &__header {color: #fff;}
     &__text {
@@ -229,21 +190,13 @@ img {
     }
 }
 
-
-
-
-
 /* --------- SECTION: latest news -----------*/
-
 
 .latestNews {
     background-color:  #f5f3f3;
     padding: 100px 0;
 
     &__sectionBody {justify-content: space-between}
-    // &__content {
-    //     // flex-basis: 30%;
-    // }
     &__header {margin-bottom: 60px}
 
     &__subHeader {margin: 20px 0 5px 0;}
@@ -251,24 +204,11 @@ img {
         display: flex;
         align-items: center;
         width: 138px;
-        // flex-wrap: wrap;
+        border-bottom: 3px solid transparent;
+            &:hover {border-bottom: 3px solid #285d64;}
     }
-    &__readMore {margin-right: 10px}
-
+    &__readMore {margin-right: 10px};
 }
-
-
-
-
-
-
-//     &__sectionBody {justify-content: space-around}
-//     &__content {
-//         flex-basis: 30%;
-//         padding: 0 60px;
-//         text-align: center;
-//     }
-// }
 
 /* --------- SECTION: ask a question -----------*/
 
@@ -278,7 +218,6 @@ img {
 }
 
 .askAQuestion {
-    // padding: 100px 0;
     &__sectionBody {flex-direction: column;}
     &__questionBox {
         background-color:  #f2b094;
@@ -288,23 +227,21 @@ img {
         border-bottom: 1px solid $primaryColor;
         padding: 7px 0;
         }
+
     &__submit {
         @include button;
         background-color:  #f2b094;
-        // width: 150px;
         margin: 0 auto;
+        &:hover {background-color: #ffa07a;}
     }
 }
-textarea:focus {
-    outline-width: 0;
-}
 
+textarea:focus {outline-width: 0;}
 
 ::placeholder {
    text-align: center;
    color: $primaryColor;
 }
-
 
 /* --------- SECTION: latest shoots -----------*/
 
@@ -339,21 +276,14 @@ textarea:focus {
         background-color: $primaryColor;
         transition: 0.5s;
     }
-    &__galleryContainer {
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
-        flex: 1 0 58%;
-    }
 
-
-
+    &__galleryContainer {flex: 1 0 58%;}
 
     &__gallery {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        }  
+    }  
         
     &__gallery li:nth-child(-n+2) {
         margin-bottom: 20px
@@ -361,140 +291,75 @@ textarea:focus {
 
     &__content {position: relative;}
     &__caption {display: none;}
-
-  
-
-    &__latestShoots__content:hover .latstShoots__photoContainer .latestShoots__caption {
-        color: #fff;
+    &__photoContainer:hover .latestShoots__caption {
         text-align: center;
-        padding-top: 20%;
+        padding-top: 35%;
         display: block;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+        background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
         }
-
-    }
-
-
-    // &__gallery {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     flex: 2 0 52%;
-    //     justify-content: space-between;
-    // }
-    // &__photoContainer {
-    //     position: relative;
-    //     background-color: black;
-    //     opacity: 1;
-    // }
-    // &__photo {opacity: 1}
-    // &__pictureText {color: #fff;}
-
-
-        // &__gallery {
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     flex: 2 0 52%;
-        //     justify-content: space-between; 
-        //     position: relative;
-        // }
-        // &__caption {display: none;}
-        // &__photoContainer:hover .latestShoots__caption {
-        //     color: #fff;
-        //     text-align: center;
-        //     padding-top: 20%;
-        //     display: block;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     right: 0;
-        //     bottom: 0;
-        //     background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
-        // }
-        
-
-
-
-// .latestShoots__photoContainer:hover .latestShoots__photo {
-//     opacity: 0.3;
-// }
-
-// .latestShoots__photoContainer:hover .latestShoots__caption {
-//     opacity: 1; 
-// }
-    
-// .latestShoots__photoContainer .latestShoots__photo,
-// .latestShoots__caption {
-//     transition: opacity 0.5s ease-out;
-// }
-
-// .latestShoots__caption {
-//     position: absolute;
-//     left: 0;
-//     top: 40%;
-//     right: 0;
-//     text-align: center;
-//     opacity: 0;
-// }
-
-
-
-// .latestShoots__photoContainer .latestShoots__photo {
-//     opacity: 1;
-// }
-
-// .latestShoots__photoContainer:hover .latestShoots__photo {
-//     opacity: 0.3;
-// }
-
-// .latestShoots__photoContainer:hover .latestShoots__caption {
-//     opacity: 1; 
-// }
-    
-
-// .latestShoots__photoContainer .latestShoots__photo,
-// .latestShoots__caption {
-//     transition: opacity 0.5s ease-out;
-// }
-
-// .latestShoots__caption {
-//     position: absolute;
-//     left: 0;
-//     top: 40%;
-//     right: 0;
-//     text-align: center;
-//     opacity: 0;
-// }
+    &__pictureText {color: #fff;}
+}
 
 
 
 
-/* --------- SECTION: footer -----------*/
+
+
+
+
+
+/* ================== SECTION: media queries ================*/
 
 @media only screen and (max-width: 1200px) {
 
     .mainTitle {margin-left: 3%}
-    .navigation {margin-right: 3%}
+    .headeNavigation {margin-right: 3%}
 
     .testimonials {
         &__body {flex-direction: column;}
         &__figure {margin: 0 auto;}
         &__content {padding: 0px 5%;}
-        &__subHeader {margin-top: 10%;}
+        &__subHeader {
+            margin-top: 10%;
+            text-align: center;
+        }
     }
 
     .sampleShoot {
         &__gallery {
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: center;
+            margin-bottom: 40px;
         }
-        &__content {padding: 20px;}
+    }
+
+    .socialMediaButtons {
+        top: 87%;
+        &__container {padding: 0;}
+    }
+
+    .footerInfo {
+        flex-wrap: wrap;
+        &__contact {
+            flex-basis: 45%;
+            padding-left: 8%;
+        }
+        &__aboutUs {
+            flex-basis: 55%;
+            padding-right: 8%;
+        }
+        &__instagram {
+            flex-basis: 100%;
+            padding: 5% 0 8% 8%;
+        }
     }
 }
+    
 
 @media only screen and (max-width: 1140px) {
     .latestNews {
@@ -507,25 +372,26 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 1096px) {
+    .latestShootsSection {padding: 0;}
     .latestShoots {
         flex-wrap: wrap;
-
-        &__content {
-            padding: 3%;
-            justify-content: center;
+        &__gallery {
+            justify-content: space-around;
+            & li:nth-child(-n+2) {margin-bottom: 0px;}
         }
-
+        &__content {margin: 3%;}
         &__nav {flex-basis: 100%;}
+        &__subHeader {margin: 25px 0;}
         &__menu {
             flex-direction: row;
             justify-content: space-evenly;
         }
-        
     }
-
 }
 
+
 @media only screen and (max-width: 1050px) {
+
     .mainHeader {height: 70vh;}
     .mainWelcome {margin-top: 0;}
     .services {
@@ -535,15 +401,82 @@ textarea:focus {
             padding: 0 20%;
         }
     }
+    .latestShoots__subHeader {height: 66px;}
+}
+
+@media only screen and (max-width: 958px) {
+    .sampleShoot {
+        &__gallery {margin-bottom: 0;}
+        &__content {margin-bottom: 30px;}
+    }
+}
+
+@media only screen and (max-width: 850px)  {
+    // .mainWelcome {
+    //     transform: translate(-16%, 44%);
+    //     // height: 60vw;
+    // }
+
+    .navigation__label {
+        margin-right: 10px;
+        display: inline-block;}
+
+    .headerNavigation {
+        position: fixed;
+        right: 0;
+    }
+
+    .headerNavigation__menu {
+        background: $primaryColor;
+        width: 118px;
+        right: -118px;
+        flex-direction: column;
+        position: fixed;
+    }
+
+    .headerNavigation__item {
+        margin: 10px;
+        padding-left: 0;
+    }
+
+    .headerNavigation.input:checked + .headerNavigation__menu {
+        right: 0px;
+    }
+
+    .headerNavigation__links {
+        color: #fff;
+    }
 
 }
 
 @media only screen and (max-width: 818px) {
     .latestShoots {
+        &__gallery {justify-content: center;}
         &___content {margin: 0 auto;}
         &__menu {flex-direction: column;}
-        &__latestshoots__textContainer {
-            padding: 20px 0;
+        &__nav {height: 415px;}
+        &__subHeader {
+            margin: 0;
+            // height: 66px;
         }
     }
+
+    .footerInfo {
+        &__contact {flex-basis: 100%;}
+        &__email {border: 1px solid $primaryColor}
+        &__aboutUs {
+            flex-basis: 100%;
+            margin: 40px 0 20px 0;
+            padding-left: 8%
+        }
+        &__instagram {flex-basis: 100%;}
+    }
+    .footer__navigation__menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .footerNavigation {margin-right: 0;}
+    .footer__navigation {margin-left: 8%}
+    .footer__navigation__item {padding: 0;}
+    .footer__navigation__header {margin-top: 0px;}
 }

@@ -16,10 +16,10 @@ footer {
 
     &__contact {
         flex-basis: 25%;
-        &__content {
-            line-height: 1.922;
-        }
+        &__content {line-height: 1.922;}
     }
+
+    &__email:focus {outline-width: 0}
     &__icons {margin-right: 5px;}
     &__form {width: 92%;}
 
@@ -33,60 +33,51 @@ footer {
             display: flex;
             flex-flow: wrap;
             align-content: stretch;
-            min-width: 330px;
-            // justify-content: space-between;
-            // flex: 1 1 auto;
+            max-width: 330px;
         }
-        &__pic {
-            // flex: 1 1 auto;
-            margin: 4px;
-        }
+        &__pic {margin: 4px;}
     }
 }
 
-.footer__header {
-    margin-bottom: 20px;
-}
+.footer__header {margin-bottom: 20px;}
 
 .footer__navigation {
-    &__header {text-align: center;}
+    &__header {
+        text-align: center;
+        margin-top: 90px;
+    }
     &__menu {
         justify-content: center;
         margin: 20px 0 40px 0;
     }
-    &__item {padding: 0 25px}
+    &__item {
+        padding: 0 25px;
+        height: 38px; 
+    }
 }
 
+.navigation__links:hover {border-bottom: 3px solid $primaryColor;}
+
+.footer__last {min-width: 150px;}
         
 .email {
-        width: 100%;
-        height: 2rem;
-        background-image: url("assets/paper-plane-solid.svg");
-        background-repeat: no-repeat;
-        background-position: 95% center;
-        background-size: 0.625rem;
-        // border: 1px solid $primaryColor;
-        // @include borderColor;
-        margin-top: 15px;
-    }
-
-
+    width: 250px;
+    height: 2rem;
+    background-image: url("assets/paper-plane-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 0.625rem;
+    margin-top: 15px;
+}
 
 .socialMediaButtons {
     position: absolute;
     right: 0;
-    top: 55%;
+    top: 53%;
     transform: translate(-50%,-50%);
     
-    &__container {
-        padding: 20px 0;
-    }
-
-    // &__facebook {}
-    // &__instagram {}
-    // &__pinterest {}
+    &__container {padding: 20px 0;}
 }
-
 
 .copyright {
     background-color:  $primaryColor;
